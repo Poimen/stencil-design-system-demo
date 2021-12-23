@@ -25,7 +25,7 @@ function buildColorPalette(props, dictionary, options) {
       } else {
         a = {
           ...a,
-          ...processColorGroup(v)
+          [k]: { ...processColorGroup(v) },
         };
       }
       return a;
@@ -37,17 +37,6 @@ function buildColorPalette(props, dictionary, options) {
     current: 'currentColor',
     ...processColorGroup(props.color)
   };
-}
-
-function buildGradientPalette(colors) {
-  return Object.entries(colors).reduce((a, [k, v]) => {
-    if (k == 'transparent' || k == 'current') {
-      a[k] = v;
-      return a;
-    }
-    a[`gradient-${k}`] = v;
-    return a;
-  }, {});
 }
 
 function makeDefaultTailwindConfig() {
@@ -75,8 +64,6 @@ function formatter({ dictionary, properties, file, options = {} }) {
 
   const colors = buildColorPalette(properties, dictionary, options);
   conf.theme.extend.colors = colors;
-  conf.theme.extend.placeholderColor = colors;
-  conf.theme.extend.backgroundImage = buildGradientPalette(colors);
   return objectToES6String(file, conf);
 }
 

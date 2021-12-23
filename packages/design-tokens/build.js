@@ -34,7 +34,6 @@ StyleDictionary.extend({
     },
     tailwind: {
       transforms: ['attribute/cti', 'name/cti/kebab', 'size/pxToRem'],
-      prefix: 'omds',
       buildPath: 'build/tailwind/',
       files: [{
         destination: 'tailwind.css',
