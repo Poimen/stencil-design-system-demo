@@ -1,0 +1,22 @@
+{
+  "typography": {
+    "group": {
+      "h1": {
+        "font-size": { "value": "{font.size.h1}" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "{font.height.h1}" }
+      },
+      "h2": {
+        "font-size": { "value": "{font.size.h2}" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "{font.height.h2}" }
+      },
+      "label": {
+        "font-size": { "value": "{font.size.h2}" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "{font.height.h2}" },
+        "text-transform": { "value": "uppercase" }
+      }
+    }
+  }
+}

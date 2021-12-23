@@ -1,0 +1,18 @@
+{
+  "name": "@demo/design-tokens",
+  "version": "0.0.1",
+  "description": "Example Design Tokens by Style Dictionary",
+  "main": "build.js",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "dev": "nodemon --ignore ./build --exec node build.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "style-dictionary": "^3.1.1"
+  }
+}

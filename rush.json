@@ -390,6 +390,12 @@
    */
   "projects": [
     {
+      "packageName": "@demo/design-tokens",
+      "projectFolder": "packages/design-tokens",
+      "versionPolicyName": "demo-design-tokens",
+      "skipRushCheck": true
+    },
+    {
       "packageName": "@demo/eslint-config",
       "projectFolder": "stack/eslint-config",
       "skipRushCheck": true,
