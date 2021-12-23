@@ -13,7 +13,13 @@
     "definitionName": "individualVersion",
     "policyName": "design-tokens",
     "lockedMajor": 0
-  }, {
+  },
+  {
+    "definitionName": "individualVersion",
+    "policyName": "react-design-system-components",
+    "lockedMajor": 0
+  },
+  {
     "definitionName": "individualVersion",
     "policyName": "design-system-components",
     "lockedMajor": 0

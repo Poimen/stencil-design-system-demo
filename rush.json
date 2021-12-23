@@ -402,6 +402,12 @@
       "skipRushCheck": true
     },
     {
+      "packageName": "@demo/react-design-system-components",
+      "projectFolder": "packages/react-web-components",
+      "versionPolicyName": "react-design-system-components",
+      "skipRushCheck": true
+    },
+    {
       "packageName": "@demo/eslint-config",
       "projectFolder": "stack/eslint-config",
       "skipRushCheck": true,
