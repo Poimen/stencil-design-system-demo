@@ -11,7 +11,11 @@
 [
   {
     "definitionName": "individualVersion",
-    "policyName": "demo-design-tokens",
+    "policyName": "design-tokens",
+    "lockedMajor": 0
+  }, {
+    "definitionName": "individualVersion",
+    "policyName": "design-system-components",
     "lockedMajor": 0
   }
   // {

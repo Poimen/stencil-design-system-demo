@@ -392,7 +392,13 @@
     {
       "packageName": "@demo/design-tokens",
       "projectFolder": "packages/design-tokens",
-      "versionPolicyName": "demo-design-tokens",
+      "versionPolicyName": "design-tokens",
+      "skipRushCheck": true
+    },
+    {
+      "packageName": "@demo/design-system-components",
+      "projectFolder": "packages/web-components",
+      "versionPolicyName": "design-system-components",
       "skipRushCheck": true
     },
     {

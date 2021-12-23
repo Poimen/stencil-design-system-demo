@@ -1,0 +1,46 @@
+{
+  "name": "@demo/design-system-components",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/demo-components/demo-components.esm.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "lint": "eslint -c .eslintrc.js ./src --fix"
+  },
+  "dependencies": {
+    "@demo/design-tokens": "workspace:*",
+    "@stencil/core": "^2.12.0"
+  },
+  "devDependencies": {
+    "@demo/eslint-config": "workspace:*",
+    "@stencil/react-output-target": "^0.2.0",
+    "@types/jest": "^26.0.24",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^7.32.0",
+    "npm-run-all": "^4.1.5",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "puppeteer": "^13.0.1",
+    "postcss": "8.4.5",
+    "postcss-import": "^14.0.2",
+    "stencil-tailwind-plugin": "^1.2.1",
+    "tailwindcss": "^3.0.7",
+    "typescript": "^4.5.4"
+  },
+  "license": "MIT"
+}
