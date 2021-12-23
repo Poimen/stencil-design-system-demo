@@ -11,7 +11,7 @@ StyleDictionary.extend({
   ],
   platforms: {
     css: {
-      transforms: ['attribute/cti', 'size/pxToRem', 'asset/base64'],
+      transforms: ['attribute/cti', 'name/cti/kebab', 'size/pxToRem', 'asset/base64'],
       prefix: 'omds',
       buildPath: 'build/css/',
       files: [{

@@ -7,7 +7,7 @@ const isFont = props => props.attributes.category === 'font' && (props.attribute
 module.exports = {
   name: 'size/pxToRem',
   type: 'value',
-  matcher: props => isSize(props) || isFont(props),
+  matcher: props => isFont(props),
   transformer: (prop, options) => {
     if (prop.value.endsWith('rem')) return prop.value;
 
