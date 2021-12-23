@@ -12,9 +12,9 @@
         "line-height": { "value": "{font.height.h2}" }
       },
       "label": {
-        "font-size": { "value": "{font.size.h2}" },
+        "font-size": { "value": "{font.size.label}" },
         "font-weight": { "value": "{font.weight.bold}" },
-        "line-height": { "value": "{font.height.h2}" },
+        "line-height": { "value": "{font.height.label}" },
         "text-transform": { "value": "uppercase" }
       }
     }
