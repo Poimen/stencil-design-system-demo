@@ -1,3 +1,14 @@
+dist/
+www/
+loader/
+dist-react/
+coverage/
+storybook-static/
+changelogs/
+build/
+generated/
+artifacts/
+
 # Logs
 logs
 *.log
