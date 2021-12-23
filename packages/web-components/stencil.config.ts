@@ -3,6 +3,8 @@ import { reactOutputTarget } from '@stencil/react-output-target';
 import autoprefixer from 'autoprefixer';
 import atImport from 'postcss-import';
 import tailwindcss from 'tailwindcss';
+import { defaultExtractor } from 'tailwindcss/lib/lib/defaultExtractor';
+import purgecss from '@fullhuman/postcss-purgecss';
 import tailwind from 'stencil-tailwind-plugin';
 import tailwindConfig from './tailwind.config';
 
@@ -11,20 +13,20 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'dist',
-      esmLoaderPath: '../loader',
+      esmLoaderPath: '../loader'
     },
     {
-      type: 'docs-readme',
+      type: 'docs-readme'
     },
     {
       type: 'www',
-      serviceWorker: null, // disable service workers
+      serviceWorker: null // disable service workers
     },
     reactOutputTarget({
       componentCorePackage: '@demo/design-system-components',
       proxiesFile: '../react-web-components/src/generated/components.ts',
       includeDefineCustomElements: false
-    }),
+    })
   ],
   plugins: [
     tailwind({
@@ -34,6 +36,18 @@ export const config: Config = {
         plugins: [
           atImport(),
           tailwindcss(),
+          purgecss({
+            content: ['./**/*.tsx'],
+            safelist: [
+              ':root',
+              ':host',
+              ':shadow',
+              '/deep/',
+              '::part',
+              '::theme'
+            ],
+            defaultExtractor
+          }),
           autoprefixer()
         ]
       }
