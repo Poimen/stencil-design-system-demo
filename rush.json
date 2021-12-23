@@ -62,7 +62,7 @@
      * The default value is false to avoid legacy compatibility issues.
      * It is strongly recommended to set strictPeerDependencies=true.
      */
-    // "strictPeerDependencies": true,
+    "strictPeerDependencies": false,
 
     /**
      * Configures the strategy used to select versions during installation.
@@ -405,6 +405,12 @@
       "packageName": "@demo/react-design-system-components",
       "projectFolder": "packages/react-web-components",
       "versionPolicyName": "react-design-system-components",
+      "skipRushCheck": true
+    },
+    {
+      "packageName": "@demo/documentation-site",
+      "projectFolder": "sites/storybook",
+      "versionPolicyName": "documentation-site",
       "skipRushCheck": true
     },
     {

@@ -25,7 +25,7 @@ export const config: Config = {
     reactOutputTarget({
       componentCorePackage: '@demo/design-system-components',
       proxiesFile: '../react-web-components/src/generated/components.ts',
-      includeDefineCustomElements: false
+      includeDefineCustomElements: true
     })
   ],
   plugins: [
