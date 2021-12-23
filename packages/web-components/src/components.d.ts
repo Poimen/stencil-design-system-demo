@@ -6,56 +6,128 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface EvaButton {
         /**
-          * The first name
+          * Indicate if this is a basic button
          */
-        "first": string;
+        "basic": boolean;
         /**
-          * The last name
+          * Indicate if this is a control button
          */
-        "last": string;
+        "control": boolean;
         /**
-          * The middle name
+          * Indicate if this is a danger button
          */
-        "middle": string;
+        "danger": boolean;
+        /**
+          * Indicate if this is a giant sized button
+         */
+        "giant": boolean;
+        /**
+          * Indicate if this is a info button
+         */
+        "info": boolean;
+        /**
+          * Indicate if this is a large sized button
+         */
+        "large": boolean;
+        /**
+          * Indicate if this is a medium sized button
+         */
+        "medium": boolean;
+        /**
+          * Indicate if this is a primary button
+         */
+        "primary": boolean;
+        /**
+          * Indicate if this is a small sized button
+         */
+        "small": boolean;
+        /**
+          * Indicate if this is a secondary button
+         */
+        "success": boolean;
+        /**
+          * Indicate if this is a small sized button
+         */
+        "tiny": boolean;
+        /**
+          * Indicate if this is a warning button
+         */
+        "warning": boolean;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLEvaButtonElement extends Components.EvaButton, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLEvaButtonElement: {
+        prototype: HTMLEvaButtonElement;
+        new (): HTMLEvaButtonElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "eva-button": HTMLEvaButtonElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface EvaButton {
         /**
-          * The first name
+          * Indicate if this is a basic button
          */
-        "first"?: string;
+        "basic"?: boolean;
         /**
-          * The last name
+          * Indicate if this is a control button
          */
-        "last"?: string;
+        "control"?: boolean;
         /**
-          * The middle name
+          * Indicate if this is a danger button
          */
-        "middle"?: string;
+        "danger"?: boolean;
+        /**
+          * Indicate if this is a giant sized button
+         */
+        "giant"?: boolean;
+        /**
+          * Indicate if this is a info button
+         */
+        "info"?: boolean;
+        /**
+          * Indicate if this is a large sized button
+         */
+        "large"?: boolean;
+        /**
+          * Indicate if this is a medium sized button
+         */
+        "medium"?: boolean;
+        /**
+          * Indicate if this is a primary button
+         */
+        "primary"?: boolean;
+        /**
+          * Indicate if this is a small sized button
+         */
+        "small"?: boolean;
+        /**
+          * Indicate if this is a secondary button
+         */
+        "success"?: boolean;
+        /**
+          * Indicate if this is a small sized button
+         */
+        "tiny"?: boolean;
+        /**
+          * Indicate if this is a warning button
+         */
+        "warning"?: boolean;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "eva-button": EvaButton;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "eva-button": LocalJSX.EvaButton & JSXBase.HTMLAttributes<HTMLEvaButtonElement>;
         }
     }
 }
