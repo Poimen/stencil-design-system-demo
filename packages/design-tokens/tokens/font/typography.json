@@ -1,0 +1,52 @@
+{
+  "typography": {
+    "group": {
+      "h1": {
+        "font-size": { "value": "{font.size.h1}" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "{font.height.h1}" }
+      },
+      "h2": {
+        "font-size": { "value": "{font.size.h2}" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "{font.height.h2}" }
+      },
+      "label": {
+        "font-size": { "value": "{font.size.label}" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "{font.height.label}" },
+        "text-transform": { "value": "uppercase" }
+      },
+      "text-button-giant": {
+        "font-size": { "value": "1.125rem" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "1.5rem" },
+        "text-transform": { "value": "uppercase" }
+      },
+      "text-button-large": {
+        "font-size": { "value": "1rem" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "1.5rem" },
+        "text-transform": { "value": "uppercase" }
+      },
+      "text-button-medium": {
+        "font-size": { "value": "0.875rem" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "1rem" },
+        "text-transform": { "value": "uppercase" }
+      },
+      "text-button-small": {
+        "font-size": { "value": "0.75rem" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "1rem" },
+        "text-transform": { "value": "uppercase" }
+      },
+      "text-button-tiny": {
+        "font-size": { "value": "0.625rem" },
+        "font-weight": { "value": "{font.weight.bold}" },
+        "line-height": { "value": "0.75rem" },
+        "text-transform": { "value": "uppercase" }
+      }
+    }
+  }
+}
