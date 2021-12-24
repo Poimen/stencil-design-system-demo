@@ -5,7 +5,7 @@ import atImport from 'postcss-import';
 import tailwindcss from 'tailwindcss';
 import { defaultExtractor } from 'tailwindcss/lib/lib/defaultExtractor';
 import purgecss from '@fullhuman/postcss-purgecss';
-import tailwind from 'stencil-tailwind-plugin';
+import tailwind, { tailwindHMR } from 'stencil-tailwind-plugin';
 import tailwindConfig from './tailwind.config';
 
 export const config: Config = {
@@ -51,6 +51,7 @@ export const config: Config = {
           autoprefixer()
         ]
       }
-    })
+    }),
+    tailwindHMR()
   ]
 };
