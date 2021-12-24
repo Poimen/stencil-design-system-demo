@@ -1,5 +1,6 @@
 import React from 'react';
 import { EvaButton } from '@demo/react-design-system-components';
+
 export default {
   title: 'Components/Button',
   argTypes: {
@@ -8,7 +9,7 @@ export default {
       control: { type: 'select' }
     },
     role: {
-      options: ['primary', 'success', 'warning', 'danger', 'info'],
+      options: ['success', 'warning', 'danger', 'info'],
       control: { type: 'select' }
     }
   }
@@ -16,7 +17,7 @@ export default {
 
 const defaultStoryArgs = {
   size: 'medium',
-  role: 'primary'
+  role: 'success'
 };
 
 const ButtonTemplate = function(args) {
