@@ -3,16 +3,12 @@ import { Component, Host, h, Prop } from '@stencil/core';
 /**
  * @part button  - Styling applied to button container
  */
- @Component({
+@Component({
   tag: 'eva-button',
   styleUrl: 'eva-button.css',
   shadow: true
 })
 export class EvaButton {
-  /**
-   * Indicate if this is a primary button
-   */
-  @Prop() primary = false;
   /**
    * Indicate if this is a secondary button
    */
@@ -60,7 +56,7 @@ export class EvaButton {
 
   render() {
     const {
-      primary, success, warning, danger, info,
+      success, warning, danger, info,
       giant, large, medium, small, tiny
     } = this;
 
@@ -70,17 +66,16 @@ export class EvaButton {
           part="button"
           type="button"
           class={{
-            'flex items-center uppercase': true,
-            'p-4': giant,
-            'p-[14px]': large,
-            'p-3': medium,
-            'p-2': small,
-            'p-[6px]': tiny,
-            'text-primary-500': primary,
-            'text-success-500': success,
-            'text-warning-500': warning,
-            'text-danger-500': danger,
-            'text-info-500': info
+            'flex items-center uppercase text-white rounded-md': true,
+            'p-4 text-button-giant': giant,
+            'p-[14px] text-button-large': large,
+            'p-3 text-button-medium': medium,
+            'p-2 text-button-small': small,
+            'p-[6px] text-button-tiny': tiny,
+            'bg-success-500': success,
+            'bg-warning-500': warning,
+            'bg-danger-500': danger,
+            'bg-info-500': info
           }}
         >
           <slot></slot>

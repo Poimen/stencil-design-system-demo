@@ -16,7 +16,6 @@
 | `info`    | `info`    | Indicate if this is a info button         | `boolean` | `false` |
 | `large`   | `large`   | Indicate if this is a large sized button  | `boolean` | `false` |
 | `medium`  | `medium`  | Indicate if this is a medium sized button | `boolean` | `false` |
-| `primary` | `primary` | Indicate if this is a primary button      | `boolean` | `false` |
 | `small`   | `small`   | Indicate if this is a small sized button  | `boolean` | `false` |
 | `success` | `success` | Indicate if this is a secondary button    | `boolean` | `false` |
 | `tiny`    | `tiny`    | Indicate if this is a small sized button  | `boolean` | `false` |

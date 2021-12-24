@@ -36,10 +36,6 @@ export namespace Components {
          */
         "medium": boolean;
         /**
-          * Indicate if this is a primary button
-         */
-        "primary": boolean;
-        /**
           * Indicate if this is a small sized button
          */
         "small": boolean;
@@ -98,10 +94,6 @@ declare namespace LocalJSX {
           * Indicate if this is a medium sized button
          */
         "medium"?: boolean;
-        /**
-          * Indicate if this is a primary button
-         */
-        "primary"?: boolean;
         /**
           * Indicate if this is a small sized button
          */
